@@ -194,8 +194,8 @@ function About() {
                     <div  className='d-flex justify-content-between'>
                         <p>Copyright 2019 Shufflehoun. All rights reserved.</p>
                         <div>
-                        <ul  className='d-flex'>
-                            <li>Home</li>
+                        <ul  className='d-flex footer-nav'>
+                            <li className='active'>Home</li>
                             <li>About</li>
                             <li>Services</li>
                             <li>Reviews</li>
