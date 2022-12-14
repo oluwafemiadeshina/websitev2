@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../images/Logo_black.png'
+import '../styles/themify-icons.css'
 
 function NavigationBar() {
   return (
@@ -15,8 +16,7 @@ function NavigationBar() {
             <li>Reviews</li>
             <li>Contact</li>
         </ul>
-
-        <button className='button-item'>Get now</button>
+        <button className='button-item'><span class="ti-shopping-cart-full"></span>Get now</button>
         </div>
     </div>
   );
