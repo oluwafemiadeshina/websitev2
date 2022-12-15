@@ -14,15 +14,15 @@ document.querySelector('.mobile-nav').setAttribute('style', 'display: block !imp
   
 }
 const CloseNav = () => {
-  // alert('Clicked');
   document.querySelector('.close-menu-icon').style.visibility = "hidden"
   document.querySelector('.menu-icon').setAttribute('style', 'display:block !important');
   document.querySelector('.mobile-nav').setAttribute('style', 'display: none !important');
-  document.querySelector('.mobile-nav').setAttribute('style', 'transition: all .3s ease-in-out');
 
   let x = window.matchMedia("(max-width: 992px)")
   if(x.matches){
-    alert('Mobile View');
+    return null;
+  }else{
+    document.querySelector('.mobile-nav').setAttribute('style', 'display: none !important');
   }
 }
 

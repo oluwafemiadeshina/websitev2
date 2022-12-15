@@ -4,7 +4,7 @@
   /* justify-content: space-between; */
   text-decoration: none !important;
 }
-.mobile-nav, .menu-icon, .close-menu-icon{
+.mobile-nav, .menu-icon, .close-menu-icon, .parent-nav{
  display: none !important;   
 }
 .nav-items li{
@@ -538,7 +538,7 @@ ul > li > .active{
   }
 
   .close-menu-icon{
-    /* display: none !important;    */
+    display: none !important;   
     padding: 15px;
     position: absolute;
     top: 0;
@@ -550,6 +550,9 @@ ul > li > .active{
      position: absolute;
      top: 0;
      left: 88%;
+  }
+  .parent-nav{
+    display: block !important;  
   }
 
 }
