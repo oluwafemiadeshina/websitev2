@@ -1,6 +1,6 @@
 # Jevelin Landing page redesign
 
-This project was built with React & Bootstrap [Create React App](https://github.com/facebook/create-react-app).
+This project was built with React & Bootstrap [React](https://reactjs.org/).
 
 ## Original Website
 
