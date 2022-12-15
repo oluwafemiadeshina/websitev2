@@ -6,8 +6,7 @@ import designed4more from '../images/designed4more.jpeg'
 import '../styles/themify-icons.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faApple, faLinkedinIn, faTwitter, faFacebook} from '@fortawesome/free-brands-svg-icons'
-import { faPlay } from '@fortawesome/free-solid-svg-icons'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { faPlay, faStar } from '@fortawesome/free-solid-svg-icons'
 
 function About() {
   return (
@@ -34,7 +33,7 @@ function About() {
                 <button type="button" className='play_btn'>
                     <FontAwesomeIcon icon={faPlay} />
                 </button>
-                <img src={about_video} className=''/>
+                <img src={about_video} className='w-100'/>
             </div>
             <section className='container' >
                 <p className='text-center tip-text'>TO COMPLIMENT YOUR IDEAS</p>
@@ -71,7 +70,7 @@ function About() {
                 <div className='container my-5 py-5'>
                     <div className='row d-flex align-items-center'>
                         <div className='col-md-6'>
-                            <img src={endlessmusic} />
+                            <img src={endlessmusic}  className='w-100' />
                         </div>
                         <div className='col-md-6'>
                             <span className='icon-img'>
@@ -105,7 +104,7 @@ function About() {
                             </div>
                         </div>
                         <div className='col-md-6'>
-                            <img src={designed4more} />
+                            <img src={designed4more} className='w-75'/>
                         </div>
                     </div>
                 </div>
@@ -158,45 +157,50 @@ function About() {
             
             <section className='my-3 container'>
                 <footer className='row mt-5'>
-                    <div  className='row mb-5'>
-                    <div className='col-md-3'>
-                        <img src={logo} className='mb-4' />
-                        <p className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at</p>
-                        <div className='d-flex social_icons'>
-                            <FontAwesomeIcon icon={faLinkedinIn} />
-                            <FontAwesomeIcon icon={faTwitter} />
-                            <FontAwesomeIcon icon={faFacebook} />
+                    <div className='col-md-4'>
+                        <div className=''>
+                            <img src={logo} className='mb-4'/>
+                            <p className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at</p>
+                            <div className='d-flex social_icons'>
+                                <FontAwesomeIcon icon={faLinkedinIn} />
+                                <FontAwesomeIcon icon={faTwitter} />
+                                <FontAwesomeIcon icon={faFacebook} />
+                            </div>
                         </div>
                     </div>
-                    <div className='col-md-3'>
-                        <div className='footer-heading'><h2>Explore</h2></div>
-                        <div className='footer-items'><h2>Cookies</h2></div>
-                        <div className='footer-items'><h2>About</h2></div>
-                        <div className='footer-items'><h2>Privacy Policy</h2></div>
-                        <div className='footer-items'><h2>Licenses</h2></div>
+                    <div className='col-md-8 ps-5 mt-5'>
+                        <div className='row'>
+                            <div className='col-md-4 col'>
+                                <div className='footer-heading'><h2>Explore</h2></div>
+                                <div className='footer-items'><h2>Cookies</h2></div>
+                                <div className='footer-items'><h2>About</h2></div>
+                                <div className='footer-items'><h2>Privacy Policy</h2></div>
+                                <div className='footer-items'><h2>Licenses</h2></div>
+                            </div>
+                            <div className='col-md-4 col'>
+                                <div className='footer-heading'><h2>Marketing</h2></div>
+                                <div  className='footer-items'><h2>Timeline</h2></div>
+                                <div  className='footer-items'><h2>News</h2></div>
+                                <div  className='footer-items'><h2>Insight</h2></div>
+                                <div  className='footer-items'><h2>Licensing</h2></div>
+                            </div>
+                            <div className='col-md-4 col'>
+                                <div className='footer-heading'><h2>Categories</h2></div>
+                                <div  className='footer-items'><h2>About</h2></div>
+                                <div  className='footer-items'><h2>Strategy</h2></div>
+                                <div  className='footer-items'><h2>Terms & conditions</h2></div>
+                                <div  className='footer-items'><h2>Services</h2></div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div className='col-md-3'>
-                        <div className='footer-heading'><h2>Marketing</h2></div>
-                        <div  className='footer-items'><h2>Timeline</h2></div>
-                        <div  className='footer-items'><h2>News</h2></div>
-                        <div  className='footer-items'><h2>Insight</h2></div>
-                        <div  className='footer-items'><h2>Licensing</h2></div>
-                    </div>
-                    <div className='col-md-3'>
-                        <div className='footer-heading'><h2>Categories</h2></div>
-                        <div  className='footer-items'><h2>About</h2></div>
-                        <div  className='footer-items'><h2>Strategy</h2></div>
-                        <div  className='footer-items'><h2>Terms & conditions</h2></div>
-                        <div  className='footer-items'><h2>Services</h2></div>
-                    </div>
-                    </div>
-                    <hr className='divider'/>
+                    <hr className='divider my-5'/>
                     <div  className='d-flex justify-content-between'>
-                        <p>Copyright 2019 Shufflehoun. All rights reserved.</p>
+                        <p className='copyright'>Copyright 2022 Shufflehoun. All rights reserved.</p>
                         <div>
                         <ul  className='d-flex footer-nav'>
                             <li className='active'>Home</li>
-                            <li>About</li>
+                            <li >About</li>
                             <li>Services</li>
                             <li>Reviews</li>
                             <li>Contact</li>

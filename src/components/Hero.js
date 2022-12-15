@@ -4,14 +4,15 @@ import '../styles/themify-icons.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay } from '@fortawesome/free-solid-svg-icons'
 
+
 function HeroSection() {
   return (
     <section>
 
 <div className='container-fluid hero-section'>
         <div className='container'>
-            <div className='row d-flex align-items-center'>
-                <div className='col-md-6'>
+            <div className='row d-flex align-items-center mt-5'>
+                <div className='col-md-6 mt-3'>
                     <div>
                         <p className='tip-text'>Everything at your fingertips</p>
                         <h2 className='heading-text'>Perfect App for more than just fun</h2>
@@ -30,7 +31,7 @@ function HeroSection() {
                     </div>
                 </div>
                 <div className='col-md-6'>
-                    <img src={hero_img} className="hero-image" />
+                    <img src={hero_img} className="hero-image w-100" />
                 </div>
             </div>
         </div>
